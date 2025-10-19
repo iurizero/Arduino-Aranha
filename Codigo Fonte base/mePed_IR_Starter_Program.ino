@@ -105,15 +105,15 @@ decode_results results;
 
 void setup()
 {
-  // Attach servos to Arduino Pins
-  myServo1.attach(2);
-  myServo2.attach(3);
-  myServo3.attach(4);
-  myServo4.attach(5);
-  myServo5.attach(6);
-  myServo6.attach(7);
-  myServo7.attach(8);
-  myServo8.attach(9);
+  // Attach servos to Arduino Pins (shifted: S1->S2, S2->S3, ...)
+  myServo1.attach(3);
+  myServo2.attach(4);
+  myServo3.attach(5);
+  myServo4.attach(6);
+  myServo5.attach(7);
+  myServo6.attach(8);
+  myServo7.attach(9);
+  myServo8.attach(10);
 
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
